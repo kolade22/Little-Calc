@@ -1,24 +1,28 @@
-function divisionOpp(params) {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  let result = a / b;
-  document.getElementById("result").innerHTML = result;
+let a = document.getElementById("num1");
+let b = document.getElementById("num2");
+let result = document.getElementById("result");
+
+function div() {
+  let answer = Number(a.value) / Number(b.value);
+  result.innerHTML = answer;
+  a.value = "";
+  b.value = "";
 }
-function multiplicationOpp(params) {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  let result = a * b;
-  document.getElementById("result").innerHTML = result;
+function multiply() {
+  let answer = Number(a.value) * Number(b.value);
+  result.innerHTML = answer;
+  a.value = "";
+  b.value = "";
 }
-function additionOpp(params) {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  let result = a + b;
-  document.getElementById("result").innerHTML = result;
+function add() {
+  let answer = Number(a.value) + Number(b.value);
+  result.innerHTML = answer;
+  a.value = "";
+  b.value = "";
 }
-function subtractionOpp(params) {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  let result = a - b;
-  document.getElementById("result").innerHTML = result;
+function sub() {
+  let answer = Number(a.value) - Number(b.value);
+  result.innerHTML = answer;
+  a.value = "";
+  b.value = "";
 }
